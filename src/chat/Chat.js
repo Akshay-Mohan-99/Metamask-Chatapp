@@ -37,6 +37,13 @@ const Chat = ({user,setUser}) => {
   const [currentChannelID, setCurrID] = useState(0);
 
 
+  useEffect(() =>{
+    if(messageInputValue.length > 0){
+      socket.emit('typing',setCurrID);
+
+    }
+    
+  },[messageInputValue])
 
   
   useEffect(() =>{
@@ -57,9 +64,7 @@ const Chat = ({user,setUser}) => {
             setChannel(channelTemp );
           }
           return prevID;
-        })
-        
-        
+        }) 
       })
     }
     
