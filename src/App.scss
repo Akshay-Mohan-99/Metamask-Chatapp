@@ -1,0 +1,25 @@
+.App {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+
+
+
+.loginButton{
+  position: absolute;
+  width: 30vw;
+  height: 45px;
+  left: 35vw;
+  right: 35vw;
+  top: 45vh;
+  align-items: center;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: none;
+}
