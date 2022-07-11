@@ -38,6 +38,7 @@ const Signin = ({setUser}) =>{
   
   return(
     <div className="App">
+      <h1 className="HeaderText">Welcome To Web3 Linked Chat Application !</h1>
       <button className="loginButton" onClick={onLoginHandler}>Login</button>
     </div>
   )
